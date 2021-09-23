@@ -78,7 +78,7 @@ search:
         - current_location
     index: /search/index.json
 title: Wax
-url: https://pbinkley.github.io
+url: https://dnoneill.github.io
 webrick:
   headers:
     Access-Control-Allow-Origin: '*'
