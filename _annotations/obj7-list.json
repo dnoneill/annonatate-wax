@@ -1,5 +1,5 @@
 ---
-canvas_id: "https://pbinkley.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj7.json"
+canvas_id: "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj7.json"
 ---
 {% assign annotations = site.annotations | where: "canvas", page.canvas_id | sort: "order" | map: "content" %}
 {
