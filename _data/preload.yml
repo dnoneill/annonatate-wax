@@ -1,6 +1,6 @@
 images:
 - ''
 manifests:
-- ''
+- 'https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/obj10/manifest.json'
 settings:
   viewer: mirador
