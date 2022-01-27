@@ -1,0 +1,35 @@
+---
+canvas: "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json"
+order: 1
+---
+{
+    "type": "Annotation",
+    "body": [
+        {
+            "type": "TextualBody",
+            "value": "test3",
+            "purpose": "commenting",
+            "creator": {
+                "id": "dnoneill",
+                "name": "test user"
+            },
+            "created": "2022-01-27T19:55:14.240Z",
+            "modified": "2022-01-27T19:55:15.008Z"
+        }
+    ],
+    "target": {
+        "source": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json",
+        "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=732.4556884765625,847.5604858398438,715.7176513671875,740.8306274414062"
+        },
+        "dcterms:isPartOf": {
+            "id": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/obj11/manifest.json",
+            "type": "Manifest"
+        }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "224cce4a-bb77-4bdc-98e5-5104d2a23066.json",
+    "motivation": "commenting"
+}
