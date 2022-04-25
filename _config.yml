@@ -85,9 +85,9 @@ search:
       test:
         content: false
         fields:
-        - pid
         - artist
         - location
+        - label
         - _date
         - object_type
         - test_field
