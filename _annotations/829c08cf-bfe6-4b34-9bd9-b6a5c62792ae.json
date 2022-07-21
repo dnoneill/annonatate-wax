@@ -1,0 +1,34 @@
+---
+canvas: "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json"
+order: 4
+---
+{
+    "type": "Annotation",
+    "body": [
+        {
+            "type": "TextualBody",
+            "value": "circle ",
+            "purpose": "commenting",
+            "creator": {
+                "id": "dnoneill",
+                "name": "dnoneill"
+            },
+            "created": "2022-07-21T22:58:39.904Z",
+            "modified": "2022-07-21T22:58:42.495Z"
+        }
+    ],
+    "target": {
+        "source": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json",
+        "selector": {
+            "type": "SvgSelector",
+            "value": "<svg><circle cx=\"274.3820686340332\" cy=\"1539.163818359375\" r=\"296.69123567578356\"></circle></svg>"
+        },
+        "dcterms:isPartOf": {
+            "id": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/obj11/manifest.json",
+            "type": "Manifest"
+        }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "829c08cf-bfe6-4b34-9bd9-b6a5c62792ae.json",
+    "motivation": "commenting"
+}
