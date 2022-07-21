@@ -1,0 +1,37 @@
+---
+canvas: "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json"
+order: 8
+---
+{
+    "type": "Annotation",
+    "body": [
+        {
+            "type": "TextualBody",
+            "value": "tiled box",
+            "purpose": "commenting",
+            "creator": {
+                "id": "dnoneill",
+                "name": "dnoneill"
+            },
+            "created": "2022-07-21T22:59:37.056Z",
+            "modified": "2022-07-21T22:59:42.210Z"
+        }
+    ],
+    "target": {
+        "source": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/canvas/obj11.json",
+        "selector": {
+            "type": "SvgSelector",
+            "value": "<svg><polygon points=\"1608.9534912109375,1982.9718017578125 2169.2216796875,1252.7344970703125 2558.4402764755187,1551.3590630080016 1998.1720879989562,2281.5963676955016\"></polygon></svg>"
+        },
+        "renderedVia": {
+            "name": "annotorious-tilted-box"
+        },
+        "dcterms:isPartOf": {
+            "id": "https://dnoneill.github.io/annonatate-wax/img/derivatives/iiif/obj11/manifest.json",
+            "type": "Manifest"
+        }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "f639cc8b-5593-4cbf-90c9-5123755b2565.json",
+    "motivation": "commenting"
+}
