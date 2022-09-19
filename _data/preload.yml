@@ -1,0 +1,8 @@
+images:
+- ''
+manifests:
+- ''
+settings:
+  tempuser: enabled
+  viewer: default
+  widgets: comment-with-purpose, tag, geotagging
