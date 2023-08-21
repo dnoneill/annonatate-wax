@@ -14,16 +14,16 @@ layout: null
 {% endunless %}
 {% endfor %}
 {"annotations": [{% for file in site.annotations %}{
-{{'filename' | jsonify}}:{{site.url | append: site.baseurl | append: file.url | append: file.ext | jsonify}},{{'order' | jsonify}}:{{file.order | jsonify}}, {{'json' | jsonify}}:{{file.content | replace: "<", "&lt;" | replace: ">", "&gt;"}}
+{{'filename' | jsonify}}:{{site.url | append: site.baseurl | append: file.url| append: file.ext | jsonify}},{{'order' | jsonify}}:{{file.order | jsonify}}, {{'json' | jsonify}}:{{file.content | replace: "<", "&lt;" | replace: ">", "&gt;"}}
 }{% unless forloop.last %},{% endunless %}{% endfor %}],
 "manifests": [{% for manifest in manifests %}{
-{{'url' | jsonify}}:{{site.url | append: site.baseurl | append: manifest.url| append: manifest.ext | jsonify}},{%if manifest.thumbnail%}{{'thumbnail' | jsonify }}: {{manifest.thumbnail | jsonify}}, {{'title' | jsonify }}: {{manifest.title | jsonify}}{% else %}{{'json' | jsonify}}:{{manifest.content | jsonify}}{%endif%}
+{{'url' | jsonify}}:{{site.url | append: site.baseurl | append: manifest.url| append: manifest.ext | jsonify}}, {{'iiif' | jsonify}}: {{true | jsonify}}, {{'upload' | jsonify}}: {{true | jsonify}},{{'added' | jsonify}}: {{manifest.added | jsonify}},{%if manifest.thumbnail%}{{'thumbnail' | jsonify }}: {{manifest.thumbnail | jsonify}}, {{'title' | jsonify }}: {{manifest.title | jsonify}}{% else %}{{'json' | jsonify}}:{{manifest.content | jsonify}}{%endif%}
 }{% unless forloop.last %},{% endunless %}{% endfor %}], "images": {{imagearray| jsonify}}, 
- "preloadedcontent": {{site.data.preload | jsonify}},
+"preloadedcontent": {{site.data.preload | jsonify}},
 "customviews": [{% for customview in customviews %}{
 {{'filename' | jsonify}}:{{site.url | append: site.baseurl | append: customview.url| jsonify}}, {{'editurl' | jsonify}}:{{customview.tagurl| jsonify}},{{'json' | jsonify}}:{{customview.content | replace: '<script src="https://ncsu-libraries.github.io/annona/dist/annona.js"></script>', '' | replace: '<link rel="stylesheet" type="text/css" href="https://ncsu-libraries.github.io/annona/dist/annona.css">', '' | replace: "<", "&lt;" | replace: ">", "&gt;" | jsonify}}
 }{% unless forloop.last %},{% endunless %}{% endfor %}],
- "collections": [{% for collection in collections %}{
+"collections": [{% for collection in collections %}{
 {{'filename' | jsonify}}:{{site.url | append: site.baseurl | append: collection.url| jsonify}},{{'json' | jsonify}}:{{collection.content | replace: "<", "&lt;" | replace: ">", "&gt;"}}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
 }
